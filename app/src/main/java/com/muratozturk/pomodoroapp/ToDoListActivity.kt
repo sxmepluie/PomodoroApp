@@ -29,9 +29,7 @@ class ToDoListActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         firestore = Firebase.firestore
-
         toDoList = ArrayList()
-
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerAdapter = RecyclerAdapter(toDoList)
         binding.recyclerView.adapter = recyclerAdapter
