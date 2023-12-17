@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/pfp" />
+
+    <TextView
+        android:id="@+id/adminText"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="70dp"
+        android:text="Admin"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/profileNameText"
+        android:layout_width="160dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:text="Name"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/profileSurnameText"
+        android:layout_width="160dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="135dp"
+        android:text="Surname"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/profileEmailText"
+        android:layout_width="230dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="170dp"
+        android:text="Email"></TextView>
+
+    <TextView
+        android:id="@+id/totalStudy"
+        android:layout_width="230dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="205dp"
+        android:text="Total Study"></TextView>
+
+    <TextView
+        android:id="@+id/pomodoroCounter"
+        android:layout_width="230dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="240dp"
+        android:text="Total Pomodoros"></TextView>
+
+    <Button
+        android:id="@+id/usersButton"
+        style="@android:style/Widget.Holo.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="240dp"
+        android:onClick="usersEdit"
+        android:text="Users"
+        android:textColor="#000000"
+        android:textColorHighlight="#F30000"
+        android:textColorLink="#000000"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>
